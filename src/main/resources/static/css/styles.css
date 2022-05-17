@@ -24,3 +24,24 @@ table {
             padding: 10px;
             text-align: center;
 }
+
+.box {
+    height: 20px;
+    width: 20px;
+}
+
+.red {
+    background-color: red;
+}
+
+.pink{
+    background-color: pink;
+}
+
+.purple{
+    background-color: purple;
+}
+
+h3{
+    text-align: center;
+}

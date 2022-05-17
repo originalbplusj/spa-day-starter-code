@@ -32,9 +32,25 @@
     </div>
 
     <div th:if="${manipedi == 'pedicure'}">
-        <h3 >Pedicure</h3>
+        <h3>Pedicure</h3>
+        <p th:replace="fragments :: pedicureDescription"></p>
+    </div>
+
+    <div th:if="${manipedi == 'both'}">
+        <h3>Manicure and Pedicure</h3>
+        <p th:replace="fragments :: manicureDescription"></p>
+        <br>
         <p th:replace="fragments :: pedicureDescription"></p>
     </div>
 </div>
+<footer>
+    <div>
+        <h3>Featured Nail Polish Colors</h3>
+            <div><div class="red box"></div>
+            <div><div class="pink box"></div>
+            <div><div class="purple box"></div>
+    </div>
+
+</footer>
 </body>
 </html>
