@@ -8,5 +8,17 @@
     <p th:text="'Welcome ' + ${user.username}"></p>
     <a th:href="@{/}">Menu</a>
 
+    <table>
+            <thead>
+                <tr>
+                    <!--<th>Username</th>-->
+                </tr>
+            </thead>
+            <tr th:each="user : ${users}">
+                <td th:text="${user.username}"></td>
+                <td> <a th:href="@{/user/detail/{id}(id=${user.id})}">Detail</a></td>
+            </tr>
+    </table>
+
 </body>
 </html>
