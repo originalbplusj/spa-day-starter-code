@@ -13,6 +13,10 @@ public class Client {
         this.nailService = nailService;
     }
 
+
+
+
+
     public String getSkinType() {
         return skinType;
     }

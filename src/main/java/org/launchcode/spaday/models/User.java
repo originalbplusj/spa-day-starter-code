@@ -1,5 +1,6 @@
 package org.launchcode.spaday.models;
 
+
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -30,17 +31,25 @@ public class User {
         nextId++;
     }
 
-    public User(String username, String email, String password, int id) {
+
+
+
+
+
+
+    public User(String username, String email, String password) {
+
         this();
         this.username = username;
         this.email = email;
         this.password = password;
-        //this.id = id;
-        //nextId++;
+
+
     }
 
     public int getId() {
         return id;
+
     }
 
     public String getUsername() {
@@ -65,6 +74,7 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+
 //        checkPassword();
     }
 
@@ -99,5 +109,6 @@ public class User {
     @Override
     public int hashCode() {
         return Objects.hash(id);
+
     }
 }
